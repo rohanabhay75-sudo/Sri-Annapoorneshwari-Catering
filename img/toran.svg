@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" width="120" height="40">
+  <defs>
+    <!-- Mango leaf gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="60%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <!-- Marigold flower gradient -->
+    <radialGradient id="marigoldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="35%" stop-color="#FFA000"/>
+      <stop offset="75%" stop-color="#F57C00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </radialGradient>
+    <!-- Gold thread -->
+    <linearGradient id="threadGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A93C"/>
+      <stop offset="50%" stop-color="#FFF2B2"/>
+      <stop offset="100%" stop-color="#D4A93C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sacred yellow/gold hanging thread string -->
+  <path d="M 0,4 Q 30,12 60,4 Q 90,12 120,4" fill="none" stroke="url(#threadGrad)" stroke-width="2.5"/>
+
+  <!-- Mango Leaves (Mavina Ele) -->
+  <!-- Left Leaf -->
+  <path d="M 22,7 C 20,18 26,28 30,34 C 34,28 40,18 38,7 Z" fill="url(#leafGrad)"/>
+  <path d="M 30,7 L 30,32" stroke="#81C784" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Center Leaf -->
+  <path d="M 82,7 C 80,18 86,28 90,34 C 94,28 100,18 98,7 Z" fill="url(#leafGrad)"/>
+  <path d="M 90,7 L 90,32" stroke="#81C784" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Marigold Flower (Sevanthige / Chendu Hoovu) Clusters -->
+  <!-- Flower 1 at peak (0/120) -->
+  <circle cx="0" cy="5" r="7" fill="url(#marigoldGrad)"/>
+  <circle cx="120" cy="5" r="7" fill="url(#marigoldGrad)"/>
+
+  <!-- Flower 2 hanging at center dip -->
+  <circle cx="60" cy="6" r="8" fill="url(#marigoldGrad)"/>
+  <!-- Petal texture -->
+  <circle cx="60" cy="6" r="5" fill="#FFB300" opacity="0.8"/>
+  <circle cx="60" cy="6" r="2.5" fill="#FFE082"/>
+
+  <!-- Secondary decorative beads -->
+  <circle cx="30" cy="7" r="3" fill="#D4A93C"/>
+  <circle cx="90" cy="7" r="3" fill="#D4A93C"/>
+</svg>

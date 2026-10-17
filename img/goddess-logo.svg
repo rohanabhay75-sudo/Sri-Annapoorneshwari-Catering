@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C0"/>
+      <stop offset="35%" stop-color="#F0D27A"/>
+      <stop offset="70%" stop-color="#D4A93C"/>
+      <stop offset="100%" stop-color="#8A6A14"/>
+    </linearGradient>
+    <radialGradient id="haloGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F0D27A" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#D4A93C" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0B4A32" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Aura / Halo -->
+  <circle cx="100" cy="100" r="92" fill="url(#haloGrad)"/>
+  <circle cx="100" cy="100" r="88" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <circle cx="100" cy="100" r="82" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Golden Ray Accents -->
+  <g stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" opacity="0.75">
+    <line x1="100" y1="6" x2="100" y2="14"/>
+    <line x1="100" y1="186" x2="100" y2="194"/>
+    <line x1="6" y1="100" x2="14" y2="100"/>
+    <line x1="186" y1="100" x2="194" y2="100"/>
+    <line x1="33" y1="33" x2="39" y2="39"/>
+    <line x1="161" y1="161" x2="167" y2="167"/>
+    <line x1="33" y1="167" x2="39" y2="161"/>
+    <line x1="161" y1="39" x2="167" y2="33"/>
+  </g>
+
+  <!-- Head Halo / Prabhavali -->
+  <circle cx="100" cy="72" r="32" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+  <circle cx="100" cy="72" r="27" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-dasharray="2,2"/>
+
+  <!-- Lotus Throne (Seated upon lotus) -->
+  <g fill="url(#goldGrad)" filter="url(#goldGlow)">
+    <!-- Base Petals -->
+    <path d="M 60,158 C 75,178 125,178 140,158 C 128,166 72,166 60,158 Z"/>
+    <!-- Outer Left & Right Petals -->
+    <path d="M 40,148 C 55,140 70,152 75,160 C 60,162 48,156 40,148 Z"/>
+    <path d="M 160,148 C 145,140 130,152 125,160 C 140,162 152,156 160,148 Z"/>
+    <!-- Mid Petals -->
+    <path d="M 65,152 C 80,135 95,148 100,162 C 85,160 72,158 65,152 Z"/>
+    <path d="M 135,152 C 120,135 105,148 100,162 C 115,160 128,158 135,152 Z"/>
+    <!-- Center Lotus Petal -->
+    <path d="M 100,135 C 92,148 95,162 100,165 C 105,162 108,148 100,135 Z"/>
+  </g>
+
+  <!-- Annapoorneshwari Deity Silhouette & Features -->
+  <!-- Crown / Kirita Mukuta -->
+  <path d="M 88,52 L 100,28 L 112,52 C 108,49 92,49 88,52 Z" fill="url(#goldGrad)"/>
+  <circle cx="100" cy="27" r="3.5" fill="#FFF5C0"/>
+  <path d="M 85,55 L 115,55 L 112,60 L 88,60 Z" fill="url(#goldGrad)"/>
+
+  <!-- Divine Face & Tilak -->
+  <ellipse cx="100" cy="72" rx="12" ry="14" fill="url(#goldGrad)"/>
+  <ellipse cx="100" cy="70" rx="2" ry="3.5" fill="#B3261E"/> <!-- Kumkum Tilak -->
+
+  <!-- Torso & Traditional Ornaments -->
+  <path d="M 82,84 C 82,84 92,98 100,98 C 108,98 118,84 118,84 L 122,118 C 114,124 86,124 78,118 Z" fill="url(#goldGrad)"/>
+  <circle cx="100" cy="92" r="2.5" fill="#FFF5C0"/> <!-- Necklace gem -->
+  <circle cx="100" cy="102" r="2.5" fill="#FFF5C0"/>
+
+  <!-- Seated Posture (Padmasana) -->
+  <path d="M 68,122 C 60,132 64,146 80,146 L 120,146 C 136,146 140,132 132,122 C 124,136 76,136 68,122 Z" fill="url(#goldGrad)"/>
+
+  <!-- Right Hand holding Golden Ladle (Darvi) feeding all beings -->
+  <path d="M 82,92 C 70,98 62,108 66,118 C 69,114 74,106 82,104 Z" fill="url(#goldGrad)"/>
+  <!-- The Sacred Ladle -->
+  <line x1="58" y1="126" x2="74" y2="108" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="56" cy="128" rx="6" ry="4" fill="url(#goldGrad)" transform="rotate(-30 56 128)"/>
+
+  <!-- Left Hand holding Divine Vessel of Food (Annapatra) -->
+  <path d="M 118,92 C 130,98 138,108 134,118 C 131,114 126,106 118,104 Z" fill="url(#goldGrad)"/>
+  <!-- The Vessel (Golden Bowl with Heaping Rice) -->
+  <path d="M 130,116 C 130,125 146,125 146,116 Z" fill="url(#goldGrad)"/>
+  <path d="M 131,116 C 135,110 141,110 145,116 Z" fill="#FFF5C0"/>
+
+  <!-- Auspicious Diya / Kalasha Base -->
+  <path d="M 92,168 L 108,168 L 105,176 L 95,176 Z" fill="url(#goldGrad)"/>
+</svg>
